@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Add Tailwind CSS or your preferred framework here -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .btn-custom {
+            background-color: #28A745; /* Default green */
+        }
+        .btn-custom:hover {
+            background-color: #0D4929; /* Hover green */
+        }
+        .btn-custom:active {
+            background-color: #FBCB00; /* Active yellow */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow p-4 flex justify-between items-center">
+        <!-- Logo Area -->
+        <div class="flex items-center space-x-4">
+            <div class="w-20 h-20 bg-gray-300">
+                <!-- Replace with your logo -->
+                <img src="./assets/kenya_seed_company_log.svg" alt="Logo" class="h-full w-full object-cover">
+            </div>
+            <h1 class="text-xl font-bold">Kenya Seed Company</h1>
+        </div>
+        <!-- Mail and Contact Icons -->
+        <div class="flex items-center space-x-6">
+            <a href="mailto:info@kenyaseed.co.ke" class="text-gray-500 hover:text-gray-900">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sign-Up Form Section -->
+    <div class="container mx-auto mt-12 p-6 bg-white rounded-lg shadow-md max-w-md">
+        <!-- Larger Logo on Top of "Create an Account" -->
+        <div class="flex justify-center mb-6">
+            <img src="./assets/kenya_seed_company_log.svg" alt="Large Logo" class="h-24 w-24"> <!-- Adjust the size as necessary -->
+        </div>
+        <h2 class="text-2xl font-bold mb-6 text-center">Create an Account</h2>
+        <form>
+            <!-- First Name -->
+            <div class="mb-4">
+                <label for="first-name" class="block text-gray-700">First Name</label>
+                <input type="text" id="first-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your first name" required>
+            </div>
+
+            <!-- Middle Name -->
+            <div class="mb-4">
+                <label for="middle-name" class="block text-gray-700">Middle Name</label>
+                <input type="text" id="middle-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your middle name">
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-4">
+                <label for="last-name" class="block text-gray-700">Last Name</label>
+                <input type="text" id="last-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your last name" required>
+            </div>
+
+            <!-- Username -->
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700">Username</label>
+                <input type="text" id="username" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-4">
+                <label for="phone-number" class="block text-gray-700">Phone Number</label>
+                <input type="tel" id="phone-number" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-4">
+                <label for="address" class="block text-gray-700">Address</label>
+                <input type="text" id="address" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your address" required>
+            </div>
+
+            <!-- Location -->
+            <div class="mb-4">
+                <label for="location" class="block text-gray-700">Location</label>
+                <input type="text" id="location" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your location" required>
+            </div>
+
+            <!-- Crops Producing (Textarea) -->
+            <div class="mb-4">
+                <label for="crops-producing" class="block text-gray-700">Crops Producing</label>
+                <textarea id="crops-producing" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" rows="4" placeholder="Enter crops you are producing" required></textarea>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700">Password</label>
+                <input type="password" id="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-4">
+                <label for="confirm-password" class="block text-gray-700">Confirm Password</label>
+                <input type="password" id="confirm-password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Confirm your password" required>
+            </div>
+
+            <!-- Sign Up Button -->
+            <div class="mb-4">
+                <button type="submit" class="btn-custom w-full text-white px-4 py-2 rounded-md">Sign Up</button>
+            </div>
+
+            <!-- Link to Log In Page -->
+            <div class="text-center">
+                <p class="text-gray-600">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Log In</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

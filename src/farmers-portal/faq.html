@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Kenya Seed Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/flowbite@1.4.6/dist/flowbite.js"></script>
+    <style>
+
+        /* White sidebar icons */
+        .sidebar-icon {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1); /* White icons */
+        }
+
+        /* Normal card icons */
+        .icon-size {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Custom height for the dashboard cards */
+        .card-height {
+            height: 200px; /* Reduced to 200px */
+        }
+
+        /* Increased vertical padding for the sidebar items */
+        .sidebar-item {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar-link img {
+            margin-right: 10px;
+        }
+
+        /* Reduce logout icon size */
+        .logout-icon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<!-- Sidebar -->
+<aside class="fixed w-64 h-screen bg-gray-800 text-white">
+    <a href="dashboard.html">
+        <div class="px-6 py-4">
+            <img src="./assets/kenya_seed_company_log.svg" alt="Kenya Seed Company Logo" class="w-20 mx-auto mb-4">
+            <h2 class="text-2xl font-bold text-center">Farmers' Portal</h2>
+        </div>
+    </a>
+    <nav class="mt-10">
+        <ul>
+            <li class="px-6 sidebar-item hover:bg-gray-600">
+                <a href="latest-news.html" class="sidebar-link">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/news.png" alt="Latest News" class="sidebar-icon">
+                    Latest News
+                </a>
+            </li>
+            <li class="px-6 sidebar-item hover:bg-gray-600">
+                <a href="event.html" class="sidebar-link">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/calendar.png" alt="Events" class="sidebar-icon">
+                    Events
+                </a>
+            </li>
+            <li class="px-6 sidebar-item hover:bg-gray-600">
+                <a href="feedback.html" class="sidebar-link">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/feedback.png" alt="Feedback" class="sidebar-icon">
+                    Feedback
+                </a>
+            </li>
+            <li class="px-6 sidebar-item hover:bg-gray-600">
+                <a href="support.html" class="sidebar-link">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/technical-support.png" alt="Support Services" class="sidebar-icon">
+                    Support Services
+                </a>
+            </li>
+            <li class="px-6 sidebar-item hover:bg-gray-600">
+                <a href="export.html" class="sidebar-link">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/export.png" alt="Export" class="sidebar-icon">
+                    Export
+                </a>
+            </li>
+            <li class="px-6 sidebar-item hover:bg-gray-600">
+                <a href="faq.html" class="sidebar-link">
+                    <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/faq.png" alt="FAQs" class="sidebar-icon">
+                    FAQs
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="absolute bottom-0 w-full px-6 py-4">
+        <button class="w-full bg-red-600 py-2 text-white rounded-lg flex items-center justify-center">
+            <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/logout-rounded-up.png" alt="Logout" class="logout-icon">
+            Logout
+        </button>
+    </div>
+</aside>
+
+<!-- Header -->
+<header class="w-full bg-gray-100 shadow-md py-4 px-6 flex justify-end items-center">
+    <button class="mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.054-.595 1.436L4 17h5m6 0a3.5 3.5 0 01-7 0m7 0H9" />
+        </svg>
+    </button>
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5.121 17.804A10.978 10.978 0 0112 15c2.236 0 4.308.733 5.879 1.804M9 5a3 3 0 116 0M6.603 6.297a3 3 0 014.794 0M18.097 6.297a3 3 0 00-4.794 0" />
+        </svg>
+    </button>
+</header>
+<div class="container mx-auto p-6 mr-8" style="margin-left: 16rem;">
+    <h1 class="text-2xl font-bold text-main mb-4">Frequently Asked Questions</h1>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 1 -->
+        <h2 class="text-xl font-semibold text-main mb-4">FAQs</h2>
+        <div id="accordion-collapse" data-accordion="collapse">
+            <h3 id="accordion-collapse-heading-1">
+                <button type="button" class="flex justify-between items-center p-4 w-full font-medium text-left text-main bg-gray-100 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200">
+                    <span>What types of seeds does Kenya Seed Company offer?</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011.707.707L10.707 8h4.586a1 1 0 110 2H10.707l1.293 1.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h3>
+            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                <div class="p-4 border border-gray-200">
+                    <p class="text-gray-500">We offer a wide variety of seeds, including maize, wheat, barley, sorghum, and sunflower seeds.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <h3 id="accordion-collapse-heading-2">
+                <button type="button" class="flex justify-between items-center p-4 w-full font-medium text-left text-main bg-gray-100 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200">
+                    <span>How can I get in touch with the support team?</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011.707.707L10.707 8h4.586a1 1 0 110 2H10.707l1.293 1.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h3>
+            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-4 border border-gray-200">
+                    <p class="text-gray-500">You can get in touch with our support team by using the live chat feature on the Support Services page or via email at support@kenyaseedcompany.com.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <h3 id="accordion-collapse-heading-3">
+                <button type="button" class="flex justify-between items-center p-4 w-full font-medium text-left text-main bg-gray-100 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200">
+                    <span>Where do you export your products?</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011.707.707L10.707 8h4.586a1 1 0 110 2H10.707l1.293 1.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h3>
+            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-4 border border-gray-200">
+                    <p class="text-gray-500">Kenya Seed Company exports seeds to multiple countries including Country 1, Country 2, and Country 3, focusing on high-quality agricultural products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/flowbite@1.4.6/dist/flowbite.js"></script>
+</body>
+</html>
